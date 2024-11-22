@@ -1,7 +1,11 @@
 package cliente;
 
+import java.io.*;
+import java.util.*;
+import java.net.*;
+
 /**
- * TODO: Complementa esta clase para que genere la conexión TCP con el servidor
+ * TODO: Complementa esta clase para que genere la conexiï¿½n TCP con el servidor
  * para enviar un boleto, recibir la respuesta y finalizar la sesion
  */
 public class ClienteTCP {
@@ -23,7 +27,7 @@ public class ClienteTCP {
 	}
 
 	/**
-	 * Sirve para finalizar la la conexión de Cliente y Servidor
+	 * Sirve para finalizar la la conexiï¿½n de Cliente y Servidor
 	 */
 	public void finSesion () {
 		

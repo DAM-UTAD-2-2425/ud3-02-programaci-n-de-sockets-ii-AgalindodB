@@ -1,5 +1,8 @@
 package servidor;
 
+import java.io.*;
+import java.util.*;
+import java.net.*;
 import java.util.Random;
 import java.util.Set;
 import java.util.TreeSet;
@@ -19,8 +22,8 @@ public class ServidorTCP {
 	 */
 	public ServidorTCP (int puerto) {
 		this.respuesta = new String [9];
-		this.respuesta[0] = "Boleto inválido - Números repetidos";
-		this.respuesta[1] = "Boleto inválido - números incorretos (1-49)";
+		this.respuesta[0] = "Boleto invï¿½lido - Nï¿½meros repetidos";
+		this.respuesta[1] = "Boleto invï¿½lido - nï¿½meros incorretos (1-49)";
 		this.respuesta[2] = "6 aciertos";
 		this.respuesta[3] = "5 aciertos + complementario";
 		this.respuesta[4] = "5 aciertos";
@@ -85,7 +88,7 @@ public class ServidorTCP {
 	 * Metodo que saca por consola del servidor la combinacion
 	 */
 	private void imprimirCombinacion () {
-		System.out.print("Combinación ganadora: ");
+		System.out.print("Combinaciï¿½n ganadora: ");
 		for (Integer elto : this.combinacion) 
 			System.out.print(elto + " ");
 		System.out.println("");

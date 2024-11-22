@@ -1,5 +1,9 @@
 package servidor;
 
+import java.io.*;
+import java.util.*;
+import java.net.*;
+
 public class PrimitivaServidor {
 
 	public static void main(String[] args) {
